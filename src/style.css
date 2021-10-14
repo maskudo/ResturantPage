@@ -6,13 +6,35 @@
 body{
     background-color: black;
     color: #ffe;    
+    font-family: garamond;
 }
+
 header{
     display: block;
     margin: auto;
     text-align: center;
     font-size: 30px;
     margin: 2% auto;
+    color: rgb(155, 116, 16);
+}
+footer{
+    display: flex;
+    bottom: 1%;
+    justify-content: center;
+    border-top: solid gray 1px;
+    margin: 4%;
+    font-size: 1.4em;
+    padding-top: 1%;
+}
+footer a{
+    padding: 0 1%;
+    text-decoration: none;
+}
+footer a:hover{
+    color: gray;
+}
+footer a:visited{
+    color: white;
 }
 .navBox{
     margin: auto;
@@ -24,10 +46,13 @@ header{
 }
 .navBox button{
     font-size: 25px;
+    color:#73771d;
     margin: 0 2%;
     width: 100%;
     background-color: #111;
     color: white;
+    font-family: garamond;
+    border: none;
 }
 #imgHome{
     width: 40%;
@@ -36,7 +61,7 @@ header{
     margin: 2% auto;
 }
 .mainContent{
-    border: solid black 2px;
+    border: solid gray 1px;
     width: 70%;
     margin: auto;
     font-size: 20px;
@@ -48,4 +73,24 @@ header{
     height: auto;
     display: block;
     margin: 2% auto;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.menu h1{
+    padding: 5%;
+}
+.menu-item{
+    width : 40%;
+    border: solid gray 2px;
+    margin: 2% 0;
+}
+.menu-item img{
+    width: 40%;
+}
+#about{
+    padding: 5%;
 }

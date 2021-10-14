@@ -2,9 +2,11 @@ import "./style.css";
 import { renderHome } from "./home.js";
 import { renderMenu } from "./menu.js";
 import { renderContact } from "./contact";
-
+import background from "./img/emberBackground.jpg"
 
 const content = document.querySelector('#content');
+const body = document.querySelector("body")
+body.style.backgroundImage = `url(${background})`
 
 function createHeader(){
     const header = document.createElement('header');
@@ -14,6 +16,20 @@ function createHeader(){
     header.appendChild(resturantName);
 
     content.appendChild(header);
+}
+function createFooter(){
+    const footer = document.createElement("footer")
+    const copyright = document.createElement('p')
+    const link = document.createElement('a')
+
+    copyright.textContent = "Copyright © 2021"
+    link.text = "maskudo"
+    link.href = "https://github.com/maskudo"
+
+    footer.append(copyright)
+    footer.append(link)
+
+    content.append(footer)
 }
 function createNav(){
     const nav = document.createElement('nav');
@@ -27,6 +43,7 @@ function createNav(){
     home.addEventListener('click',e => {
         setActive(home);
         content.append(renderHome());
+        createFooter()
     })
 
     const menu = document.createElement('button');
@@ -36,6 +53,7 @@ function createNav(){
     menu.addEventListener('click',e => {
         setActive(menu);
         content.append(renderMenu());
+        createFooter()
     })
 
     const contact = document.createElement('button');
@@ -45,6 +63,7 @@ function createNav(){
     contact.addEventListener('click',e => {
         setActive(contact);
         content.append(renderContact());
+        createFooter()
     })
 
     content.append(nav);
@@ -63,8 +82,9 @@ function setActive(navButton){
         }
     })
     const mainContent = content.querySelector('.mainContent')
-    console.log(mainContent)
     content.removeChild(mainContent)
+    const footer = content.querySelector("footer")
+    content.removeChild(footer)
     
     navButton.classList.add('active')
 }
@@ -72,3 +92,4 @@ function setActive(navButton){
 createHeader();
 createNav();
 initMainContent();
+createFooter();
