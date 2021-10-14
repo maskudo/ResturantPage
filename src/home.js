@@ -1,4 +1,4 @@
-import imgHome from './img/home.jpg';
+import imgHome from './img/chef.png';
 export function renderHome(){
     const home = document.createElement('div');
     home.classList.add('mainContent');
@@ -8,17 +8,15 @@ export function renderHome(){
     image.id = 'imgHome';
 
     const about = document.createElement('h1');
+    about.id = "about"
     about.textContent = "About Us";
 
     const description = document.createElement('p');
-    description.textContent = "Rest your weary bones and mingle with your fellow pilgrims in Lordran's finest lodge and resturant.";
+    description.innerHTML = "<br>The finest restaurant and lodging in Lordran. We have water, moss, moisture, these nice iron bars...<br>Now dish up some souls! Vee hee hee! ";
     
-    const note = document.createElement('p');
-    note.textContent = "*Fast-travel by Lord Vessel accessible.";
 
     home.append(about);
     home.append(image);   
     home.append(description);
-    home.append(note);
     return home;
 }
