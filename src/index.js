@@ -1,7 +1,7 @@
 import "./style.css";
-import "./home.js";
-import "./menu.js";
-import "./contact.js";
+import { renderHome } from "./home.js";
+import { renderMenu } from "./menu.js";
+import { renderContact } from "./contact";
 
 
 const content = document.querySelector('#content');
@@ -25,31 +25,50 @@ function createNav(){
     nav.append(home);
 
     home.addEventListener('click',e => {
-        //set active
-        //render
+        setActive(home);
+        content.append(renderHome());
     })
 
     const menu = document.createElement('button');
-    menu.textContent = 'Menu'
+    menu.textContent = 'Menu';
     menu.id = 'menu';
     nav.append(menu);
-
+    menu.addEventListener('click',e => {
+        setActive(menu);
+        content.append(renderMenu());
+    })
 
     const contact = document.createElement('button');
     contact.textContent = 'Contact';
     contact.id = 'contact';
     nav.append(contact);
+    contact.addEventListener('click',e => {
+        setActive(contact);
+        content.append(renderContact());
+    })
 
     content.append(nav);
+    
+}
+function initMainContent()
+{
+    content.append(renderHome());
 }
 
 function setActive(navButton){
-    home.classList.remove('active')
-    menu.classList.remove('active')
-    contact.classList.remove('active')
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach(button=>{
+        if(button.classList == 'active'){
+            button.classList.remove('active');
+        }
+    })
+    const mainContent = content.querySelector('.mainContent')
+    console.log(mainContent)
+    content.removeChild(mainContent)
     
     navButton.classList.add('active')
 }
 
 createHeader();
 createNav();
+initMainContent();
