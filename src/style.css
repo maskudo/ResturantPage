@@ -3,6 +3,10 @@
     padding: 0%;
     box-sizing: border-box;
 }
+body{
+    background-color: black;
+    color: #ffe;    
+}
 header{
     display: block;
     margin: auto;
@@ -21,4 +25,18 @@ header{
 .navBox button{
     font-size: 18px;
     margin: 0 2%;
+}
+#imgHome{
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 2% auto;
+}
+.mainContent{
+    border: solid black 2px;
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+    padding: 1% 0;
+    text-align: center;
 }
