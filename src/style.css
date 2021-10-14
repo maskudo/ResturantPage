@@ -19,12 +19,15 @@ header{
     width: 50%;
     display: flex;
     justify-content: center;
-    border: solid black 2px;
+    border: solid white 2px;
     margin: 2% auto;
 }
 .navBox button{
-    font-size: 18px;
+    font-size: 25px;
     margin: 0 2%;
+    width: 100%;
+    background-color: #111;
+    color: white;
 }
 #imgHome{
     width: 40%;
@@ -39,4 +42,10 @@ header{
     font-size: 20px;
     padding: 1% 0;
     text-align: center;
+}
+#imgMap{
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 2% auto;
 }
