@@ -11,7 +11,7 @@ export function renderHome(){
     about.textContent = "About Us";
 
     const description = document.createElement('p');
-    description.textContent = "Rest your weary bones and mingle with your fellow pilgrims in Lordran's finest lodge and resturant";
+    description.textContent = "Rest your weary bones and mingle with your fellow pilgrims in Lordran's finest lodge and resturant.";
     
     const note = document.createElement('p');
     note.textContent = "*Fast-travel by Lord Vessel accessible.";
