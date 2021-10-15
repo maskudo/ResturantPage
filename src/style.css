@@ -29,16 +29,15 @@ footer{
     font-size: 1.4em;
     padding-top: 1%;
     background: rgba(8, 3, 3, 0.747);
+    color: rgb(187, 140, 23);
 }
 footer a{
     padding: 0 1%;
     text-decoration: none;
+    color: rgb(230, 168, 13);
 }
 footer a:hover{
     color: gray;
-}
-footer a:visited{
-    color: white;
 }
 .navBox{
     margin: 3% auto;
