@@ -12,8 +12,8 @@ export function renderHome(){
     about.textContent = "About Us";
 
     const description = document.createElement('p');
-    description.innerHTML = "<br>The finest restaurant and lodging in Lordran. We have water, moss, moisture, these nice iron bars...<br>Now dish up some souls! Vee hee hee! ";
-    
+    description.innerHTML = "<br>We have water, moss, moisture, these nice iron bars...<br>Now dish up some souls! Vee hee hee! ";
+    description.id = "homeDescription"
 
     home.append(about);
     home.append(image);   
