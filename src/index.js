@@ -37,7 +37,8 @@ function createNav(){
     
     const home = document.createElement('button');
     home.textContent = 'Home';
-    home.id = 'home';
+    home.id = 'active';
+    home.classList.add('active')
     nav.append(home);
 
     home.addEventListener('click',e => {
@@ -79,6 +80,7 @@ function setActive(navButton){
     buttons.forEach(button=>{
         if(button.classList == 'active'){
             button.classList.remove('active');
+            button.id = ""
         }
     })
     const mainContent = content.querySelector('.mainContent')
@@ -87,6 +89,7 @@ function setActive(navButton){
     content.removeChild(footer)
     
     navButton.classList.add('active')
+    navButton.id = "active"
 }
 
 createHeader();

@@ -7,6 +7,7 @@ body{
     background-color: black;
     color: #ffe;    
     font-family: garamond;
+    background-blend-mode: lighten;
 }
 
 header{
@@ -15,7 +16,9 @@ header{
     text-align: center;
     font-size: 30px;
     margin: 2% auto;
-    color: rgb(155, 116, 16);
+    color: rgb(187, 140, 23);
+    background: rgba(8, 3, 3, 0.747);
+    border-bottom: solid rgba(58, 58, 56, 0.534) 1px;
 }
 footer{
     display: flex;
@@ -37,36 +40,49 @@ footer a:visited{
     color: white;
 }
 .navBox{
-    margin: auto;
+    margin: 3% auto;
     width: 50%;
     display: flex;
     justify-content: center;
-    border: solid white 2px;
-    margin: 2% auto;
+    /* border: solid white 2px; */
 }
 .navBox button{
-    font-size: 25px;
-    color:#73771d;
-    margin: 0 2%;
-    width: 100%;
-    background-color: #111;
-    color: white;
+    font-size: 1.6em;
+    margin: 0;
+    width: 90%;
+    height: 2em;
+    background-color: black;
+    color: rgb(209, 156, 23);
     font-family: garamond;
     border: none;
 }
+.navBox button:hover{
+    /* background: rgb(26, 25, 25); */
+    padding-bottom: 0.3em;
+    border-bottom: solid gray 2px;
+}
+#active{
+    border-bottom: solid rgb(180, 134, 18) 2px;
+}
+
 #imgHome{
     width: 40%;
     height: auto;
     display: block;
     margin: 2% auto;
+    border-radius: 50%;
+}
+#homeDescription{
+    line-height: 1.7em;
 }
 .mainContent{
-    border: solid gray 1px;
+    border: solid rgba(58, 58, 56, 0.534) 1px;
     width: 70%;
     margin: auto;
     font-size: 20px;
     padding: 1% 0;
     text-align: center;
+    background-color: rgba(8, 3, 3, 0.534);
 }
 #imgMap{
     width: 40%;
@@ -93,4 +109,15 @@ footer a:visited{
 }
 #about{
     padding: 5%;
+}
+#bonfire{
+    display: flex;   
+    justify-content: center;
+}
+#icon{
+    height: 50px;
+    margin-right: 20px;
+}
+div.mainContent h1{
+    color: rgb(187, 140, 23);
 }
