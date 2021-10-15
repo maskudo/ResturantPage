@@ -1,18 +1,28 @@
 import imgMap from "./img/map.png"
+import bonfireIcon from "./img/bonfireIcon.png"
 export function renderContact(){
     const contact = document.createElement('div')
     contact.classList.add('mainContent')
     
-    const bonfire = document.createElement('h2');
-    bonfire.textContent = "Bonfire No.: 3";
+    const bonfire = document.createElement('div')
+    bonfire.id = "bonfire"
+    const bonfireName = document.createElement('h3');
+    bonfireName.innerHTML = "Third bonfire from Undead Asylum.<br>Warping via the Lord-Vessel available.";
+    const icon = document.createElement("img")
+    icon.src = bonfireIcon
+    icon.id = "icon"
+    
 
+    bonfire.append(icon)
+    bonfire.append(bonfireName)
+    
     const map = document.createElement('img');
     map.src = imgMap;
     map.id = 'imgMap';
 
-    contact.append(bonfire);
+    
     contact.append(map);
-    contact.append("Location: Firelink Shrine");
+    contact.append(bonfire);
 
     return contact;
 }
