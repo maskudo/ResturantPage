@@ -6,28 +6,29 @@
 body{
     background-color: black;
     color: #ffe;    
-    font-family: garamond;
-    background-blend-mode: lighten;
+    font-family: garamond;    
 }
 
 header{
-    display: block;
+    display: flex;
+    justify-content: center;
     margin: auto;
     text-align: center;
     font-size: 30px;
     margin: 2% auto;
     color: rgb(187, 140, 23);
     background: rgba(8, 3, 3, 0.747);
-    border-bottom: solid rgba(58, 58, 56, 0.534) 1px;
+    border-bottom: solid rgba(58, 58, 56, 0.842) 1px;
 }
 footer{
     display: flex;
     bottom: 1%;
     justify-content: center;
-    border-top: solid gray 1px;
+    border-top: solid rgba(58, 58, 56, 0.842) 1px;
     margin: 4%;
     font-size: 1.4em;
     padding-top: 1%;
+    background: rgba(8, 3, 3, 0.747);
 }
 footer a{
     padding: 0 1%;
@@ -104,6 +105,9 @@ footer a:visited{
     border: solid gray 2px;
     margin: 2% 0;
 }
+.menu-item:hover{
+    background-color: rgba(150, 150, 146, 0.103);
+}
 .menu-item img{
     width: 40%;
 }
@@ -120,4 +124,10 @@ footer a:visited{
 }
 div.mainContent h1{
     color: rgb(187, 140, 23);
+}
+.bonfireImg{
+    height: 60px;
+}
+.bonfireImg2{
+    transform: scaleX(-1);
 }
