@@ -3,7 +3,8 @@ import { renderHome } from "./home.js";
 import { renderMenu } from "./menu.js";
 import { renderContact } from "./contact";
 import background from "./img/emberBackground.jpg"
-import bonfire from "./img/bonfire.jpg"
+import dungPie from "./img/dungPie.png"
+import estus from "./img/estus.png"
 
 const content = document.querySelector('#content');
 const body = document.querySelector("body")
@@ -14,11 +15,11 @@ function createHeader(){
     const resturantName = document.createElement('h1');
     const bonfireImg1 = document.createElement('img')
     const bonfireImg2 = document.createElement('img')
-    bonfireImg1.src = bonfire
-    bonfireImg2.src = bonfire
-    bonfireImg1.classList.add("bonfireImg")
-    bonfireImg2.classList.add("bonfireImg")
-    bonfireImg2.classList.add("bonfireImg2")
+    bonfireImg1.src = dungPie
+    bonfireImg2.src = estus
+    bonfireImg1.classList.add("headerImg")
+    bonfireImg2.classList.add("headerImg")
+    bonfireImg2.classList.add("headerImg2")
     
     resturantName.textContent = 'Firelink Dine';
     header.appendChild(bonfireImg1);

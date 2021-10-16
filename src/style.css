@@ -124,9 +124,9 @@ footer a:hover{
 div.mainContent h1{
     color: rgb(187, 140, 23);
 }
-.bonfireImg{
-    height: 60px;
+.headerImg{
+    height: 80px;
 }
-.bonfireImg2{
+.headerImg2{
     transform: scaleX(-1);
 }
