@@ -7,7 +7,7 @@ export function renderContact(){
     const bonfire = document.createElement('div')
     bonfire.id = "bonfire"
     const bonfireName = document.createElement('h3');
-    bonfireName.innerHTML = "Third bonfire from the Undead Asylum.<br>Warping via Lord-Vessel available.";
+    bonfireName.innerHTML = "Third bonfire from the Undead Asylum.<br>Warping with Lord-Vessel available.";
     const icon = document.createElement("img")
     icon.src = bonfireIcon
     icon.id = "icon"
