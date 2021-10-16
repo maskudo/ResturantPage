@@ -3,6 +3,7 @@ import bloodRed from "./img/bloodredMossClump.png";
 import bloomingPurple from "./img/bloomingPurpleMossClump.jpg";
 import divineBlessing from "./img/divineBlessing.jpg";
 import greenBlossom from "./img/greenBlossom.png";
+import dungPie from "./img/dungPie.png";
 
 function createMenuItem(source,name){
     const menuItem = document.createElement('div')
@@ -32,9 +33,10 @@ export function renderMenu(){
 
     const item1 = createMenuItem(Estus,"Estus")
     const item2 = createMenuItem(divineBlessing, "Diving Blessing")
-    const item3 = createMenuItem(bloomingPurple,"Blooming Purple Moss Clump")
-    const item4 = createMenuItem(greenBlossom,"Green Blossom")
-    const item5 = createMenuItem(bloodRed,'Bloodred Moss Clump')
+    const item3 = createMenuItem(dungPie,"Dung Pie")
+    const item4 = createMenuItem(bloomingPurple,"Blooming Purple Moss Clump")
+    const item5 = createMenuItem(greenBlossom,"Green Blossom")
+    const item6 = createMenuItem(bloodRed,'Bloodred Moss Clump')
 
     menu.append(beverages)
     menu.append(item1)
@@ -43,5 +45,6 @@ export function renderMenu(){
     menu.append(item3)
     menu.append(item4)
     menu.append(item5)
+    menu.append(item6)
     return menu;
 }
